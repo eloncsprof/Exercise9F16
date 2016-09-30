@@ -1,0 +1,306 @@
+html {
+  background-image: url(../images/bats.gif);
+  background-repeat: repeat;
+}
+
+/* Copyright © 2016 David J. Powell */
+
+body {
+  background-color: white;
+  border: 2px solid black;
+  background-color: white;
+  box-shadow: 5px 5px 10px black,
+    -5px 5px 10px black;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 95%;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+header img {
+  float: left; 
+  min-width: 40px;
+  max-width: 85px;
+  padding-left: 1em;
+  padding-top: 1em;
+
+}
+
+header {
+  border-bottom: 1px solid black;
+  background: linear-gradient(45deg, white, orange 75%, black 100%);
+}
+
+header h2 {
+  color: black;
+  font-size: 2em;
+  margin-bottom: .2em;
+  margin-top: 0;
+  padding-top: .5em;
+  text-indent: 1em;
+}
+
+header h3 {
+  margin-top: 0;
+  text-indent: 1em;
+}
+
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+.cf:before,
+.cf:after {
+  content:"";
+  display:table;
+}
+
+.cf:after {
+  clear:both;
+}
+ 
+/*horizontal menu styles*/
+/* copied all of these from lynda */
+header nav {
+  background: black;
+  height: 2em;
+}
+
+header ul, 
+header li {
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+header ul {
+  background: black;
+  height: 2em;
+  width: 100%;
+}
+
+header li {
+  width: 20%;
+}
+
+header li a {
+  color: white;
+  display: block;
+  line-height: 2em;
+  text-align: center;
+  text-decoration: none;
+}
+
+header li a:hover {
+  background: gray;
+  color: black;
+  font-weight: bold;
+}
+
+header .current, 
+header a:hover.current  {
+  background: black;
+  color: orange;
+  cursor: default;
+}
+
+header #menu {
+  display: none;
+}
+
+main nav {
+  float: left;
+  width: 20%;
+}
+
+main {
+  clear: both;
+  padding: 0 .8em;
+}
+
+article {
+  float: right;
+  margin-left: 1em;
+  width: 75%; 
+}
+
+figure {
+  display: inline-block;
+}
+
+article h2 {
+  margin-bottom: 0;
+  margin-top: .2em;
+}
+
+article h2::first-letter {
+  font-size: 2em;
+}
+
+article p {
+  margin-bottom: .2em;
+  margin-top: .2em;
+}
+
+article p:nth-child(3) {
+  margin-top: .5em;
+}
+
+article h3 {
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+
+figure a img {
+  width: 100%;
+  max-width: 154px;
+}
+
+figure a {
+  color: orange;
+  font-weight: bold;
+
+}
+
+figure a:link, 
+figure a:visited {
+  color: orange;
+}
+
+figure a:hover {
+  color: green;
+}
+
+#verticle-menu ul {
+  margin: 1em 0 0 0;
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+
+#verticle-menu li {
+  background: orange;
+  border: 2px solid black;
+  color: black;
+  margin-bottom: .2em;
+}
+
+#verticle-menu li a {
+  color: black;
+  font-weight: bold;
+  line-height: 2em;
+  padding-left: .4em;
+  text-decoration: none;
+}
+
+footer {
+  border-top: 1px solid black;
+  background: linear-gradient(45deg, black, orange 25%, white 100%);
+  clear: both;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+footer p {
+  font-size: .9em;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 1em 1em;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    background-image: none;
+  }
+  
+  body {
+    box-shadow: none;
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header nav ul {
+    height: 14em;
+    position: absolute;
+    transform: translate(-15em, 0);
+    width: 10em;
+  }
+  
+  header nav ul.open {
+    postion: absolute;
+    transform: translate(0, 0);
+  }
+  
+  header nav ul li {
+    float: none;
+    line-height: 2em;
+    padding-bottom: 1em;
+    padding-left: .1em;
+    width: 10em;
+  }
+  
+  header nav li:last-child {
+    padding-bottom: 0;
+  }
+  
+  header li a {
+    line-height: 2em;
+    padding-left: .2em;
+    text-align: left;
+  }
+  
+  header #menu {
+    color: white;
+    display: block;
+    float: right;
+    line-height: 2em;
+    margin: 0 1em 0  0;
+  }
+  
+  header #menu:hover {
+  background: gray;
+  color: black;
+  font-weight: bold;
+ }
+  
+  article {
+    float: none;
+    width: 100%
+  }
+  
+  #verticle-menu {
+    float: none;
+    margin: 0 auto;
+    width: 25%;
+  }
+    
+}
+
+@media screen and (max-width: 479px) {
+  header h2 {
+    font-size: 1.75em;
+  }
+  
+  header h3 {
+    font-size: 1.25em;
+    padding-bottom: .75em;
+  }
+  
+  article h2 {
+    font-size: 1.5em;
+  }
+  
+  article section h3 {
+    font-size: 1.25em;
+  }
+  
+}

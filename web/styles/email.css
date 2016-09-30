@@ -1,0 +1,197 @@
+html {
+  background-image: url(../images/bats.gif);
+  background-repeat: repeat;
+}
+
+/* Copyright © 2016 David J. Powell */
+
+body {
+  background-color: white;
+  border: 2px solid black;
+  background-color: white;
+  box-shadow: 5px 5px 10px black,
+    -5px 5px 10px black;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  width: 800px;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+header img {
+  float: left; 
+  padding-left: 1em;
+  padding-top: 1em;
+
+}
+
+header {
+  border-bottom: 1px solid black;
+  background: linear-gradient(45deg, white, orange 75%, black 100%);
+}
+
+header h2 {
+  color: black;
+  font-size: 2em;
+  margin-bottom: .2em;
+  margin-top: 0;
+  padding-top: .5em;
+  text-indent: 25px;
+}
+
+header h3 {
+  margin-top: 0;
+  text-indent: 25px;
+}
+
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+.cf:before,
+.cf:after {
+  content:"";
+  display:table;
+}
+
+.cf:after {
+  clear:both;
+}
+ 
+/*horizontal menu styles*/
+/* copied all of these from lynda */
+header nav {
+  background: black;
+  height: 2em;
+}
+
+header ul, 
+header li {
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+header ul {
+  background: black;
+  height: 2em;
+  width: 100%;
+}
+
+header li {
+  width: 20%;
+}
+
+header li a {
+  color: white;
+  display: block;
+  line-height: 2em;
+  text-align: center;
+  text-decoration: none;
+}
+
+header li a:hover {
+  background: gray;
+  color: black;
+  font-weight: bold;
+}
+
+header .current, 
+header a:hover.current  {
+  background: black;
+  color: orange;
+  cursor: default;
+}
+
+main nav {
+  float: left;
+  width: 160px;
+}
+
+main {
+  clear: both;
+  padding: 0 10px;
+}
+
+article {
+  float: left;
+  margin-left: 1em;
+  width: 600px; 
+}
+
+article h2 {
+   margin-bottom: .4em;
+   margin-top: .4em;
+   text-align: left;
+}
+
+#verticle-menu ul {
+  display: block;
+  list-style: none;
+  margin: 1em 0 0 0;
+  padding: 0;
+}
+
+#verticle-menu li {
+  background: orange;
+  border: 2px solid black;
+  color: black;
+  margin-bottom: .2em;
+}
+
+#verticle-menu li a {
+  color: black;
+  font-weight: bold;
+  line-height: 2em;
+  padding-left: .4em;
+  text-decoration: none;
+}
+
+form {
+  margin-right: 0;
+  width: 85%;
+}
+
+form label {
+  display: inline-block;
+  margin-right: 2em;
+  text-align: right;
+  width: 5em;
+  
+}
+
+input {
+  border: 1px solid gray;
+  margin-bottom: .3em;
+  width: 23em;
+
+}
+
+input[type="submit"] {
+  background-color: orange;
+  margin-bottom: 1em;
+  padding: .2em .8em;
+  width: 7em;
+}
+
+footer {
+  border-top: 1px solid black;
+  background: linear-gradient(45deg, black, orange 25%, white 100%);
+  clear: both;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+footer p {
+  font-size: .9em;
+  margin-bottom: 0;
+  padding: 1em 1em;
+  text-align: center;
+}
